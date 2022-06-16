@@ -14,7 +14,6 @@ send_dir=/home/odmin/test-backup
 
 echo "Start backup ${srv_name}"
 
-#mkdir -p ${destination_dir}${srv_name}/increment/
 db_user=eleven
 db_password=ST2017whiller#
 db_name=sot
@@ -32,4 +31,4 @@ rsync --archive --verbose --progress --rsh='ssh -p2222' ${send_dir} ${destinatio
 find ${destination_dir}${srv_name} -maxdepth 1 -type d -mtime +7 -exec rm -rf {} \;
 date
 
-echo "Finish backup ${srv_name}"
+echo "Finish backup ${srv_name}" 
