@@ -2,7 +2,7 @@
 date
 
 #data from the sender's server
-send_dir=/home/odmin/domains/sud.gov.kz/html
+send_dir=/home/odmin/domains/sud.gov.kz/html/sites
 send_user=odmin
 send_ip=212.154.160.153
 
