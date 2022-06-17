@@ -23,7 +23,7 @@ fi
 
 dump_db=$destination_db/$db_name-$(date '+%d-%m-%Y_%H-%M-%S').sql
 
-mysqldump --user=$db_user --password=$db_password $db_name > $dump_db | gzip > $DIR/$DATE/$HOURS/$db.sql.gz
+mysqldump --user=$db_user --password=$db_password $db_name > $dump_db | gzip > $dump_db.gz
 
 #recipient's ssh access
 destination_user=oem
